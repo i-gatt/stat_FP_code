@@ -1,0 +1,20 @@
+N: 48842; inputs: 14
+Train: 29305; calibration: 9768; test untouched: 9769
+Random seed: 42; stratified 5-fold CV
+C grid: [0.001, 0.01, 0.1, 1, 10, 100]
+Selected C: 1
+Fold NLLs: [0.320666, 0.314936, 0.320275, 0.327823, 0.331137]
+Mean CV NLL: 0.322968
+CV standard error: 0.002893
+Calibration costs are preliminary in-sample results.
+
+FP:FN ratio   method  threshold  mean cost
+        1:1      Raw     0.5000   0.145373
+        1:1    Platt     0.5000   0.145885
+        1:1 Isotonic     0.5000   0.145066
+        1:5      Raw     0.1667   0.311118
+        1:5    Platt     0.1667   0.310401
+        1:5 Isotonic     0.1667   0.309480
+        5:1      Raw     0.8333   0.206183
+        5:1    Platt     0.8333   0.207207
+        5:1 Isotonic     0.8333   0.203419
